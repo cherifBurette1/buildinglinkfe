@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'word-counter-app';
+  fileContent: string = "File content should be here";
+
+  handleFileContent(content: string): void {
+    this.fileContent = content;
+  }
 }

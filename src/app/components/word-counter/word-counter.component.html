@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">File Content</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ fileContent }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <button (click)="countWords()" class="btn btn-primary btn-block">Count Words</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Word Counts</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let word of wordCounts | keyvalue">
+                            <strong>{{ word.key }}</strong>: {{ wordCounts[word.key] }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
