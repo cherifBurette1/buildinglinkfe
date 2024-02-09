@@ -4,7 +4,7 @@
       <app-file-loader (fileLoaded)="handleFileContent($event)"></app-file-loader>
     </div>
     <div class="col-md-6">
-      <app-word-counter [fileContent]="fileContent"></app-word-counter>
+      <app-word-counter [fileContent]="fileContent" [wordsData]="wordsData"></app-word-counter>
     </div>
   </div>
 </div>

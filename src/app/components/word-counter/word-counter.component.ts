@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { FileProcessorService } from 'src/app/services/file-processor.service';
 
 
 @Component({
@@ -10,12 +9,8 @@ import { FileProcessorService } from 'src/app/services/file-processor.service';
 export class WordCounterComponent {
   @Input()
   fileContent!: string;
+  @Input()
+  wordsData: { [key: string]: number } = {};
 
-  wordCounts: { [key: string]: number } = {};
-
-  constructor(private fileProcessorService: FileProcessorService) {}
-
-  countWords(): void {
-    this.wordCounts = this.fileProcessorService.countWords(this.fileContent);
-  }
+  constructor() {}
 }

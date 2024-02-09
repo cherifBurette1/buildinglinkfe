@@ -1,0 +1,31 @@
+.file-upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+  
+
+  .upload-icon {
+    color: blue;
+    font-size: 40px
+  }

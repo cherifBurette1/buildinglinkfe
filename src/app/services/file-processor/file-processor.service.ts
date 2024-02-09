@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { SweetAlertService } from '../sweet-alert/sweet-alert.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FileProcessorService {
-  constructor() {}
+  constructor(private sweetAlertService: SweetAlertService) {}
 
   readFileContent(file: File): Observable<string> {
     return new Observable<string>((observer) => {
@@ -16,19 +17,24 @@ export class FileProcessorService {
         observer.complete();
       };
       reader.onerror = (error) => {
+        var errMessage: string = "error reading file";
         observer.error(error);
+        console.error(errMessage, error);
+        this.sweetAlertService.showToast(errMessage, 'error');
       };
       reader.readAsText(file);
     });
   }
 
   countWords(content: string): { [key: string]: number } {
-    const words = content.split(/\s+/);
-    const wordCounts: { [key: string]: number } = {};
+    console.log(content);
+    
+    const words = content.split(/\s+/).filter(word => word.length > 0);
+    const wordsData: { [key: string]: number } = {};
     words.forEach(word => {
       word = word.toLowerCase();
-      wordCounts[word] = (wordCounts[word] || 0) + 1;
+      wordsData[word] = (wordsData[word] || 0) + 1;
     });
-    return wordCounts;
+    return wordsData;
   }
 }
