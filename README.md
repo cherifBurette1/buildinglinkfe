@@ -21,9 +21,9 @@ Application consists of mutli component design with 3 services in order to conne
 
 ## Future Enhancements
 
-User Authentication and Authorization:
-Backend Integration
-Internationalization (i18n)
+User Authentication and Authorization, 
+Backend Integration, 
+Internationalization (i18n), 
 Search Engine Optimization (SEO)
 
 ## Further help
