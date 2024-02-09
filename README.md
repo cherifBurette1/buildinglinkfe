@@ -19,10 +19,13 @@ Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github
 
 Application consists of mutli component design with 3 services in order to connect the functionality of the app between components in addition to comunitication using @Input and @output decorators
 
-##Future Enhancements
+## Future Enhancements
 
 User Authentication and Authorization:
 Backend Integration
 Internationalization (i18n)
 Search Engine Optimization (SEO)
+
 ## Further help
+
+Donnot hesitate to contact me through my email cherifburette@yahoo.com
