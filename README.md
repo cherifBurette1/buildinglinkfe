@@ -15,7 +15,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The appl
 
 Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-##Structure
+## Structure
 
 Application consists of mutli component design with 3 services in order to connect the functionality of the app between components in addition to comunitication using @Input and @output decorators
 
