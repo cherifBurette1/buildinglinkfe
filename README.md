@@ -28,4 +28,4 @@ Search Engine Optimization (SEO)
 
 ## Further help
 
-Donnot hesitate to contact me through my email cherifburette@yahoo.com
+Do not hesitate to contact me through my email cherifburette@yahoo.com
